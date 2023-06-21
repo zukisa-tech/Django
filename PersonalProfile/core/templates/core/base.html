@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <title>{% block title %}{% endblock %} | Profile Site</title>
+</head>
+
+<body>
+    <nav class="py-6 px-6 flex justify-between items-center border-b border-gray-200">
+        <a href="/" class="text-xl font-semibold">Zukisa Dyantyi</a>
+
+        <div class="space-x-6">
+            <a href="{% url 'index' %}" class="text-lg font-semibold hover:text-gray-500">Introduction</a>
+            <a href="{% url 'education' %}" class="text-lg font-semibold hover:text-gray-500">Education</a>
+            <a href="{% url 'experience' %}" class="text-lg font-semibold hover:text-gray-500">Experience</a>
+            <a href="{% url 'projects' %}" class="text-lg font-semibold hover:text-gray-500">Projects</a>
+        </div>
+    </nav>
+    <div class="px-6 py6">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer class="py-6 px-6 justify-between bg-white-800 flex my-4">
+
+        <div>
+            <a href="#" class="fa fa-facebook fa-lg" style="margin-right: 180px;"></a>
+            <a href="#" class="fa fa-twitter fa-lg" style="margin-right: 180px;"></a>
+            <a href="#" class="fa fa-linkedin fa-lg" style="margin-right: 180px;"></a>
+            <a href="#" class="fa fa-instagram fa-lg" style="margin-right: 180px;"></a>
+            <a href="#" class="fa fa-skype fa-lg" style="margin-right: 200px;"></a>
+            <a href="#" class="fa fa-google fa-lg" style="margin-right: 200px;"></a>
+            <a href="#" class="fa fa-github fa-lg" style="margin-right: 200px;"></a>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

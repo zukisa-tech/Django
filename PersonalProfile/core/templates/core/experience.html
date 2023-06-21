@@ -1,0 +1,40 @@
+{% extends 'core/base.html'%}
+{% load static %}
+
+{% block title %}
+    Experience
+{% endblock %}
+
+{% block content %}
+<div>
+    <div class="my-4">
+        <h2 style="font-weight: bold; margin-bottom: 1rem;">The Building Company (November 2019 - Current)</h2>
+        <img src="{% static 'TBC.jpg' %}" alt="Zukisa Dyantyi" style="max-height: 300px; width: 500px; margin-right: 20px; margin-bottom: 1rem;" />
+        <h4 style="font-weight: lighter; margin-bottom: 1rem;">Data/System Administrator</h4>
+        <h2 style="font-weight: bold; margin-bottom: 1rem;">Responsibilities</h2>
+        <ul class="list-style-type-disc padding-left-20">
+            <li>Ensuring ETL processes are up running daily.</li>
+            <li>Perform SQL Server backups and restores.</li>
+            <li>Write SQL Scripts.</li>
+            <li>Ensure backups takes place.</li>
+            <li>Install and configure SQL Server.</li>
+            <li>Analyze ETL process failure, data anomalies and data warehouse issues.</li>
+            <li>Maintaining reports on BI tools (Analytic plus and Qlik sense).</li>
+            <li>Built Analytic plus dashboards to visualize depart performance on daily tasks.</li>
+            <li>Conduct complex data analysis and report on results.</li>
+            <li>Ensuring systems are up and running daily (Ticketing system and Finance Workflows built on SharePoint).</li>
+        </ul>
+    </div>
+    <div class="my-4">
+        <h2 style="font-weight: bold; margin-bottom: 1rem;">University of The Western Cape (February 2019 - November 2019)</h2>
+        <img src="{% static 'UWC.jpg' %}" alt="Zukisa Dyantyi" style="max-height: 300px; width: 500px; margin-right: 20px; margin-bottom: 1rem;" />
+        <h4 style="font-weight: lighter; margin-bottom: 1rem;">3rd Year Computer Science (Databases/Machine Learning)</h4>
+        <h2 style="font-weight: bold; margin-bottom: 1rem;">Responsibilities</h2>
+        <ul class="list-style-type-disc padding-left-20">
+            <li>Assist students with practicals.</li>
+            <li>Conduct tutoring sessions.</li>
+            <li>Assist lecturers with marking and other admin duties.</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
