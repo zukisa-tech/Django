@@ -1,10 +1,45 @@
 {% extends 'core/base.html'%}
-
+{% load static %}
 
 {% block title %}
     Projects
 {% endblock %}
 
 {% block content %}
-
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <div class="my-4">
+        <h2 style="font-weight: bold; margin-bottom: 1rem; text-align: center;">The Building Company</h2>
+        <img src="{% static 'TBC.jpg' %}" alt="Zukisa Dyantyi" style="max-height: 300px; width: 500px; margin-bottom: 1rem; object-fit: contain; border-radius: 50%; margin-left: 490px;" />
+        <h4 style="font-weight: bold; margin-bottom: 1rem; text-align: center;">Projects</h4>
+        <h2 style="font-weight: bold; margin-bottom: 1rem; text-align: center;">Migrate QlikView to QlikSense</h2>
+        <p style="margin-bottom: 10px; text-align: center">
+            During this project, my role involved supporting the Data Architect/BI developer in collaboration with Business Analysts to facilitate the transition from QlikView to Qlik Sense.
+            Our primary objective was to migrate all existing applications from the old version to the new one while also creating new applications, visualizations, and reports.
+            Additionally, I conducted training sessions for users from various departments within the organization to ensure smooth adoption of the new tool.
+            As part of my responsibilities, I provided initial support for the tool and developed reports based on the specific needs of the business.
+        </p>
+        <h2 style="font-weight: bold; margin-bottom: 1rem; text-align: center;">ManageEngine Opmanager</h2>
+        <p style="margin-bottom: 10px; text-align: center">
+            The organization made significant investments in the ManageEngine stack, which offers a range of products including service desk and Desktop Central for remote control and device management. 
+            The project's goal was to update all assets in the network monitoring tool (Opmanager) to effectively visualize our network. 
+            Additionally, it aimed to assist the infrastructure team in proactively addressing any issues before users/clients raise tickets to the service desk.
+        </p>
+    </div>
+    <div class="my-4">
+        <h2 style="font-weight: bold; margin-bottom: 1rem; text-align: center;">University of The Western Cape</h2>
+        <img src="{% static 'UWC.jpg' %}" alt="Zukisa Dyantyi" style="max-height: 300px; width: 500px; margin-bottom: 1rem; object-fit: contain; border-radius: 50%; margin-left: 490px;" />
+        <h4 style="font-weight: bold; margin-bottom: 1rem; text-align: center;">Projects</h4>
+        <h2 style="font-weight: bold; margin-bottom: 1rem; text-align: center;">Cyber Security - Wi-Fi Hacking with a Raspberry Pi </h2>
+        <p style="margin-bottom: 10px; text-align: center">
+            The objective of this project is to construct a hacking tool using a raspberry pi in order to raise awareness about Cyber Security and showcase the ease of connecting to or compromising a Wi-Fi network with inadequate encryption. 
+            The project will be considered successful if I am able to establish a connection to a Wi-Fi network with weak encryption, gather details about the network, and obtain information about the devices connected to it.
+        </p>
+        <h2 style="font-weight: bold; margin-bottom: 1rem; text-align: center;">Capstone Project - Parking web</h2>
+        <p style="margin-bottom: 10px; text-align: center">
+            This project emerged as a remedy for students facing difficulties in locating vacant parking spaces, leading us to devise a parking website as a solution.
+            It was a collaborative effort involving a group, where my role was that of a web developer. 
+            The project was implemented utilizing CSS, HTML, PHP, and XAMPP.
+        </p>
+    </div>
+</div>
 {% endblock %}
